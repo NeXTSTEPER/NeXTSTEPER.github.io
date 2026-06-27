@@ -1,20 +1,125 @@
 <!DOCTYPE html>
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="0; url='https://searx.space'" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>searx</title>
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/NeXTSTEPER/NeXTSTEPER.github.io/main/apple-touch-icon.png" sizes="192x192">
+    <link rel="icon" href="https://raw.githubusercontent.com/NeXTSTEPER/NeXTSTEPER.github.io/main/apple-touch-icon.png">
+    <style>
+        :root {
+            --bg: #1d1f21;
+            --surface: #26282c;
+            --border: #3a3d42;
+            --text: #e8e8e8;
+            --muted: #9ba0a6;
+            --accent: #3050ff;
+            --accent-hover: #4a66ff;
+        }
 
-    <title>Redirect</title>
-       <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/NeXTSTEPER/NeXTSTEPER.github.io/main/apple-touch-icon.png" sizes="192x192"> 
-    <link rel="icon" href="https://raw.githubusercontent.com/NeXTSTEPER/NeXTSTEPER.github.io/main/apple-touch-icon.png" />
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f7f7f7;
+                --surface: #ffffff;
+                --border: #e0e0e0;
+                --text: #1a1a1a;
+                --muted: #6b7075;
+                --accent: #3050ff;
+                --accent-hover: #1e3ce6;
+            }
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 3rem 2.5rem;
+            max-width: 460px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .link {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.75rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: background 0.15s ease;
+        }
+
+        .link:hover {
+            background: var(--accent-hover);
+        }
+
+        .url {
+            display: block;
+            margin-top: 1.25rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
 </head>
 <body>
- 
+    <main class="card">
+        <svg class="logo" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round">
+            <circle cx="38" cy="38" r="28" />
+            <line x1="60" y1="60" x2="82" y2="82" />
+        </svg>
+        <h1>searx</h1>
+        <p>Privacy-respecting metasearch engine instances.</p>
+        <a class="link" href="https://searx.space">Open searx.space</a>
+        <span class="url">searx.space</span>
+    </main>
 </body>
 </html>
